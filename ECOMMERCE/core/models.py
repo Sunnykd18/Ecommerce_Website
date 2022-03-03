@@ -26,10 +26,10 @@ class Item(models.Model):
     description = models.TextField()
 
     def __str__(self):
-        return f"{self.quantity} of {self.item.title}"
+        return self.title + "  " + self.slug
 
     def get_absolute_url(self):
-        return reverse("core:product" , kwargs={
+        return reverse("core:product-detail" , kwargs={
           'slug': self.slug
         })
 

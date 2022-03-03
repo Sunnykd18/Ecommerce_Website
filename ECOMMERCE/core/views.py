@@ -15,14 +15,21 @@ def products(request):
 def checkout(request):
     return render(request, "checkout.html")
 
-class HomeView(ListView):
-    model = Item
-    template_name = "home.html"
-
+# class HomeView(ListView):
+#     model = Item
+#     template_name = "home.html"
+def home(request):
+    context = {
+        'items': Item.objects.all()
+    }
+    return render(request, template_name='home.html', context=context)
 
 class ItemDetailView(DetailView):
     model = Item
     template_name = "product.html"
+
+
+
 
 def add_to_cart(request, slug):
     item = get_object_or_404(Item,slug=slug)
