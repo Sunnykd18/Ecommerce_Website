@@ -7,7 +7,6 @@
 * Implemented a shopping cart which enables users to create customer
 cart, add and remove products from the cart
 * After adding in cart user buy the product with or without discount coupon
-* Implement online payment getway strip and paytm
 * Implemented advance search, and filters for Products with title,desc,category
 
 ## Security
