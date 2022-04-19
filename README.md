@@ -2,7 +2,6 @@
 # Shopping Portal
 ### Ecommerce Website
 
-
 ## About
 * Implemented a shopping cart which enables users to create customer
 cart, add and remove products from the cart
